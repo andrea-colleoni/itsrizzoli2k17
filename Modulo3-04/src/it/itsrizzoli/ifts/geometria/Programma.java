@@ -8,11 +8,12 @@ public class Programma {
 		PoligonoRegolare poli1 = new PoligonoRegolare();
 		PoligonoRegolare poli2 = new PoligonoRegolare();
 		
-		PoligonoRegolare tri = new TriangoloEquilatero();
+		TriangoloEquilatero tri = new TriangoloEquilatero(10.5F);
 		PoligonoRegolare quad = new Quadrato();
+		
 
 		tri.lunghezzaLato = 7;
-		((TriangoloEquilatero)tri).altezza = 28;
+		((TriangoloEquilatero)quad).altezza = 28;
 		//((Quadrato)tri).lunghezzaLato = 30; // ClassCastException
 		quad.lunghezzaLato = 16;
 		
@@ -25,6 +26,7 @@ public class Programma {
 		
 		poli1.numeroLati = 4;
 		poli2.numeroLati = 4;
+
 		
 		System.out.println(poli1);
 		

@@ -8,6 +8,12 @@ public class TriangoloEquilatero extends PoligonoRegolare {
 		super();
 		this.numeroLati = 3;
 	}
+	
+	public TriangoloEquilatero(float lunghezzaLato) {
+		super();
+		this.numeroLati = 3;
+		this.lunghezzaLato = lunghezzaLato;
+	}
 
 
 

@@ -9,6 +9,12 @@ public class PoligonoRegolare {
 	protected float calcolaPerimetro() {
 		return numeroLati * lunghezzaLato;
 	}
+	
+	protected float calcolaPerimetro(boolean stampaRisultato) {
+		float p = calcolaPerimetro();
+		System.out.println("Il perimetro è " + p);
+		return p;
+	}
 
 	@Override
 	public boolean equals(Object altroPoligono) {
