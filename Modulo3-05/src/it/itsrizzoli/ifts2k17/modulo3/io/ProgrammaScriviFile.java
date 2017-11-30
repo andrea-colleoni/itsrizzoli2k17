@@ -10,8 +10,6 @@ public class ProgrammaScriviFile {
 	public static void main(String[] args) throws IOException {
 		// scanner per leggere da tastiera
 		Scanner sc = new Scanner(System.in);
-		// leggo la parola da tastiera
-		String parola = sc.nextLine();
 		
 		// creo un oggetto di classe File che rappresenta un percorso sul disco
 		File f = new File("C:/Users/andre/Desktop"
@@ -20,8 +18,17 @@ public class ProgrammaScriviFile {
 		// costruisco un FileWriter (che è un Writer che scrive su un
 		// OutputStream collegato a un File)
 		FileWriter fw = new FileWriter(f);
-		// scrivo la parola sul file
-		fw.write(parola);
+				
+		String riga = sc.nextLine();
+		while(!riga.equals("esci")) {
+			// scrivo la parola sul file
+			fw.write(riga + "\n");
+			
+			// leggo la parola da tastiera
+			riga = sc.nextLine();	
+		}
+		
+		
 		// chiudo il file
 		fw.close();
 
