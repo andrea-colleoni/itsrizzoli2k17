@@ -9,7 +9,7 @@ public class GGSettimanaMap {
 		// traduttore di giorni
 		Map<String, String> gg = new HashMap<String, String>();
 		gg.put("lunedì",  "monday");
-		gg.put("martedì",  "tuesdey");
+		gg.put("martedì",  "tuesday");
 		gg.put("mercoledì",  "wednesday");
 		gg.put("giovedì",  "thursday");
 		gg.put("venerdì",  "friday");

@@ -14,7 +14,7 @@ public class GGSettimanaArray {
 		// traduttore di giorni
 		
 		//traduciGiorno("lunedì") => "monday"
-		System.out.println(traduciGiorno("venerdi"));
+		System.out.println(traduciGiorno("venerdì"));
 	}
 
 	private static String traduciGiorno(String gg) {
