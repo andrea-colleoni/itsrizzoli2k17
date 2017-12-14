@@ -12,13 +12,13 @@ public class MultiThread {
 		// esecuzione multithread con classe che implementa Runnable 
 //		ClasseRunnable cr1 = new ClasseRunnable();
 //		cr1.id = "1";
-//		cr1.metodoLungo();
+		//cr1.metodoLungo();
 //		ClasseRunnable cr2 = new ClasseRunnable();
 //		cr2.id = "2";
-//		cr2.metodoLungo();
+		//cr2.metodoLungo();
 //		ClasseRunnable cr3 = new ClasseRunnable();
 //		cr3.id = "3";
-//		cr3.metodoLungo();
+		//cr3.metodoLungo();
 		
 		// esecuzione multithread con classe che estende Thread
 //		Thread t1 = new Thread(cr1);
@@ -39,6 +39,11 @@ public class MultiThread {
 		t3.start();
 	}
 	
-	
+	public void metodoLungo(String id) throws InterruptedException {
+		System.out.println(id + ": inizio...");
+		//attesa
+		Thread.sleep(2000); // dorme per 2 secondi
+		System.out.println(id + ": fine.");
+	}
 
 }

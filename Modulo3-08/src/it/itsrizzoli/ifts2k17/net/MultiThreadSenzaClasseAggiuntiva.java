@@ -20,12 +20,13 @@ public class MultiThreadSenzaClasseAggiuntiva {
 		// lambda expression
 		// implementazione in loco di un'interfaccia funzionale (con un solo metodo)
 		Runnable r2 = () -> {
-			try {
-				mt.metodoLungo("2");
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		};
+				try {
+					mt.metodoLungo("2");
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			};
+		
 		// lambda expression funziona da java 1.8 in poi
 		Runnable r3 = () -> {
 			try {
