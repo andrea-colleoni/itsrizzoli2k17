@@ -37,11 +37,12 @@ public class PersonaDao {
 			Connection conn = getConnection();
 			Statement comandoSQL = conn.createStatement();
 			String sql = "select * from persona";
-			ResultSet persone = comandoSQL.executeQuery(sql);
-			while(persone.next()) {
-				elenco.add(mappaPersona(persone));
+			ResultSet rs = comandoSQL.executeQuery(sql);
+			while(rs.next()) {
+				Persona p = mappaPersona(rs);
+				elenco.add(p);
 			}
-			persone.close();
+			rs.close();
 			comandoSQL.close();
 			conn.close();
 		} catch (ClassNotFoundException | SQLException e) {
