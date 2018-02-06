@@ -4,6 +4,10 @@
 		<class>model.Persona</class>
 		<class>model.Studente</class>
 		<class>model.Docente</class>
+		<class>model.corsi.Corso</class>
+		<class>model.corsi.Iscrizione</class>
+		<class>model.corsi.IscrizionePK</class>
+		<class>model.corsi.Studente</class>
 		<properties>
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/ered"/>
 			<property name="javax.persistence.jdbc.user" value="root"/>

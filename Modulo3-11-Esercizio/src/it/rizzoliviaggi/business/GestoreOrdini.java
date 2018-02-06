@@ -1,4 +1,4 @@
-package it.ristoapp.business;
+package it.rizzoliviaggi.business;
 
 import javax.persistence.EntityManager;
 
@@ -13,7 +13,7 @@ public class GestoreOrdini {
 	public boolean mettiProdottoInOrdine(int idProdotto, int quantita, int idOrdine) {
 		EntityManager em = JPAUtility.emf.createEntityManager();
 		Ordine o = em.find(Ordine.class, idOrdine);
-		// TODO (Francesca) da finire: manca ....
+		
 		if (o != null) {
 			Prodotto p = em.find(Prodotto.class,  idProdotto);
 			RigaOrdine ro = new RigaOrdine();
@@ -25,7 +25,6 @@ public class GestoreOrdini {
 				em.getTransaction().begin();
 				em.persist(ro);
 				em.getTransaction().commit();
-				// FIXME non funzional ap arte che fa.......
 				return true;
 			} else {
 				return false;

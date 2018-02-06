@@ -6,19 +6,17 @@ public class Switch {
 		
 		switch(a) {
 		case 1:
-			System.out.println("vale 1!");
+			System.out.print("vale 1!");
 			break;
 		case 5:
-			System.out.println("vale 5!");
-			break;
+			System.out.print("vale 5!");
 		case 10:
-			System.out.println("vale 10!");
-			break;
+			System.out.print("vale 10!");
 		case 15: 
-			System.out.println("vale 15!");
+			System.out.print("vale 15!");
 			break;
 		default:
-			System.out.println("default!");
+			System.out.print("default!");
 		}
 	}
 

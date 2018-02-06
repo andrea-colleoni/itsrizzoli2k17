@@ -1,4 +1,4 @@
-package it.ristoapp.business.test;
+package it.rizzoliviaggi.business.test;
 
 import static org.junit.Assert.*;
 
@@ -10,7 +10,7 @@ public class GestoreOrdiniTest {
 	
 	@Test
 	public void simulazioneOrdineAlTavolo() throws Exception {
-		it.ristoapp.business.GestoreOrdini go = new GestoreOrdini();
+		GestoreOrdini go = new GestoreOrdini();
 		
 		// prima cosa creo l'ordine
 		int idOrdine = go.nuovoOrdine();
@@ -20,8 +20,6 @@ public class GestoreOrdiniTest {
 		go.mettiProdottoInOrdine(3, 2, idOrdine);
 		
 		go.modificaQuantita(1, 1, idOrdine);
-		
-		go.paga();
 		
 		go.confermaOrdine();
 		
