@@ -12,7 +12,7 @@ public class GestoreViaggi {
 	public List<Prenotazione> elencoDeiMieiViaggi(Utente utente) {
 		EntityManager em = JPAUtility.emf.createEntityManager();
 		
-		return em.createQuery("select p from Prenotazione p where p.prenotante=:utente", Prenotazione.class)
+		return em.createQuery("select p from Prenotazione p where p.utente=:utente", Prenotazione.class)
 				.setParameter("utente", utente)
 				.getResultList();
 	}
