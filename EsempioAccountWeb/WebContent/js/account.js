@@ -13,7 +13,7 @@ $('#btnLogin').click(function(e) {
 			// andare alla pagina areariservata
 			location.href ='areariservata.html';
 		} else {
-			$('#pnlErrLogin').addClass('show');
+			$('#pnlErrLogin').show('fast').delay(2000).hide('fast');
 		}
 	})
 	.fail(function() {
