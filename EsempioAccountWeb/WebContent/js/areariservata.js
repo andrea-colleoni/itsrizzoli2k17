@@ -1,5 +1,7 @@
 var utente = localStorage.getItem('utente');
 
+// localStorage.removeItem('utente');
+
 if (utente) {
 	$('#lblBenvenuto').show();
 	$('#lblAnonimo').hide();
